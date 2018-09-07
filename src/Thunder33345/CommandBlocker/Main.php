@@ -86,7 +86,7 @@ class Main extends PluginBase implements Listener
       fwrite($handler, $msg);
       fclose($handler);
     } elseif (!is_resource($handler) AND $this->logToFile === true) {
-      $this->getLogger()->error("Fail to write to log!");
+      $this->getLogger()->error("fail to write to log");
     }
   }
 }
